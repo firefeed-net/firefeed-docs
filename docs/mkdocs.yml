@@ -1,0 +1,46 @@
+site_name: FireFeed Documentation
+site_url: https://docs.firefeed.net
+site_description: Official documentation for FireFeed — AI-powered news aggregation platform.
+repo_url: https://github.com/firefeed-net/firefeed-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Features:
+    - Overview: features/overview.md
+    - AI Translation: features/ai-translation.md
+    - Real-time Processing: features/real-time-processing.md
+    - Global Coverage: features/global-coverage.md
+  - API Reference:
+    - Introduction: api/introduction.md
+    - Endpoints: api/endpoints.md
+  - Guides:
+    - Setup: guides/setup.md
+    - Configuration: guides/configuration.md
+  - Contributing: contributing.md
